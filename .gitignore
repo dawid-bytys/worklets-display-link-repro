@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+ios/
+android/
+work/
+*.log
+.DS_Store
+evidence/PR.md

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Worklets Display Link Repro",
+    "slug": "worklets-display-link-repro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "dev.repro.workletsdisplaylink"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "worklets-display-link-repro",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "ios": "expo run:ios",
+    "ios:release": "expo run:ios --configuration Release",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "apply-fix": "patch-package"
+  },
+  "license": "ISC",
+  "description": "Minimal iOS reproduction of react-native-worklets pausing and resuming its CADisplayLink on every animation frame.",
+  "dependencies": {
+    "expo": "58.0.26",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-reanimated": "4.7.2",
+    "react-native-worklets": "0.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^58.0.4",
+    "patch-package": "^8.0.1",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3"
+  },
+  "private": true,
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native-reanimated",
+        "react-native-worklets"
+      ]
+    }
+  }
+}
